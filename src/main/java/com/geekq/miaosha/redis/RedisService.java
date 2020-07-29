@@ -31,8 +31,8 @@ public class RedisService {
 			result = jedis.setnx(key,value);
 		}catch (Exception e){
 			log.error("expire key:{} error",key,e);
-		jedisPool.returnResource(jedis);
-		return  result;
+			jedisPool.returnResource(jedis);
+			return  result;
 		}
 		jedisPool.returnResource(jedis);
 		return  result;

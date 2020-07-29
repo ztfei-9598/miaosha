@@ -93,7 +93,7 @@ public enum ResultStatus {
         return this.name();
     }
 
-    public String toString() {
+    public String toStrings() {
         return this.getName();
     }
 
