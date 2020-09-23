@@ -17,7 +17,7 @@
     <groupId>com.geekq</groupId>
     <artifactId>miaosha</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>miaosha</name>
+    <name>miaosha-2version</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
@@ -34,6 +34,18 @@
 
     <dependencies>
         <dependency>
+            <groupId>com.geekq.api</groupId>
+            <artifactId>miaosha-order-api</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.geekq</groupId>
+            <artifactId>miaosha-common</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>        
+        
+        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
         </dependency>
@@ -43,25 +55,17 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
-
-        <dependency>
-            <groupId>com.geekq</groupId>
-            <artifactId>miaosha-common</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
-
+        
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-
-
+        
         <dependency>
             <groupId>org.mybatis.spring.boot</groupId>
             <artifactId>mybatis-spring-boot-starter</artifactId>
             <version>${org.mybatis.version}</version>
         </dependency>
-
 
         <dependency>
             <groupId>mysql</groupId>
@@ -73,8 +77,7 @@
             <artifactId>druid</artifactId>
             <version>${com.alibaba.druid}</version>
         </dependency>
-
-
+        
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
@@ -90,8 +93,7 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-validation</artifactId>
         </dependency>
-
-
+        
         <dependency>
             <groupId>net.sourceforge.nekohtml</groupId>
             <artifactId>nekohtml</artifactId>
@@ -102,7 +104,6 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-amqp</artifactId>
         </dependency>
-
 
         <dependency>
             <groupId>commons-codec</groupId>
@@ -168,13 +169,7 @@
             <artifactId>zkclient</artifactId>
             <version>${com.zk.client}</version>
         </dependency>
-
-        <dependency>
-            <groupId>com.geekq.api</groupId>
-            <artifactId>miaosha-order-api</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
-
+        
     </dependencies>
 
     <build>

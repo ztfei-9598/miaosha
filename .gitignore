@@ -101,3 +101,5 @@ release.properties
 dependency-reduced-pom.xml
 buildNumber.properties
 .mvn/timing.properties
+/miaosha-2version/.mvn/
+/miaosha-2version/.mvn/

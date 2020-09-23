@@ -12,8 +12,6 @@
     <artifactId>miaosha-web</artifactId>
 
     <dependencies>
-
-
         <dependency>
             <groupId>com.geekq</groupId>
             <artifactId>miaosha-service</artifactId>
